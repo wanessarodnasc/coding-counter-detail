@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "c4ac8ce6-f615-4ac4-a7d1-2d228604645e",
+		"name": "Counter Detail",
+		"description": "This collect is to consult counter detail to have the village name",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Counter Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/counter?id=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"counter"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "6ba08f39-e5fe-45cc-a839-8acdf69acc0c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "dd70b6f4-bbe6-4885-8253-1f5de8c95dcd",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "8526d1d3-8da5-4e98-ae55-16b5c1ef8be7",
+			"key": "url",
+			"value": "http://localhost:8090",
+			"type": "string"
+		}
+	]
+}
