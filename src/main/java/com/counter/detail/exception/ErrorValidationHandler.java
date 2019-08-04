@@ -27,7 +27,7 @@ public class ErrorValidationHandler {
 		return exception.getMessage();
 	}
 	
-	@ResponseStatus(code = HttpStatus.NOT_FOUND)
+	@ResponseStatus(code = HttpStatus.EXPECTATION_FAILED)
 	@ExceptionHandler(BusinessException.class)
 	public String handlerBusinessEexception(BusinessException exception) {
 		LOGGER.info(MessageFormat.format("Business error. {0}", exception.getMessage()));
